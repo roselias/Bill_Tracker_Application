@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.billtracker"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.billtracker"
         minSdk = 25
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -40,6 +40,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.palette:palette:1.0.0")
+    implementation(libs.material)
+    implementation(libs.palette)
 }
